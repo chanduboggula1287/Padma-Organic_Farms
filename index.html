@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Padma Organic Farm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f0fff4;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #2e7d32, #66bb6a);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-bottom: 4px solid #1b5e20;
+}
+
+/* NAVBAR */
+nav {
+    background: #1b5e20;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #66bb6a;
+}
+
+/* SECTIONS */
+section {
+    margin: 20px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #d0e8d0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* TODAY BOX */
+.today {
+    margin-top: 10px;
+    padding: 15px;
+    background: #e8f5e9;
+    border-left: 5px solid #2e7d32;
+    border-radius: 10px;
+    line-height: 1.8;
+}
+
+/* GRID */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    width: 90%;
+    max-width: 260px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+body {
+    padding: 5px;
+}
+
+h1, h2 {
+    font-size: 18px;
+}
+
+.btn {
+    font-size: 14px;
+    padding: 8px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* PRICE */
+.price {
+    color: #2e7d32;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* BADGE */
+.badge {
+    background: red;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* BUTTON */
+.btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #1b5e20;
+}
+
+/* PAYMENT */
+.payment {
+    text-align: center;
+    padding: 15px;
+    border: 1px dashed #2e7d32;
+    border-radius: 10px;
+    background: #f9fff9;
+}
+
+/* CART FLOAT */
+.cart {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: black;
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+/* FOOTER */
+footer {
+    background: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌾 Padma Organic Farms</h1>
+    <p>Fresh | Natural | Direct from Farmer</p>
+</header>
+
+<nav>
+    <a href="#today">Today Available</a>
+    <a href="#products">Products</a>
+    <a href="#payment">Payment</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- TODAY AVAILABLE -->
+<section id="today">
+    <h2>🔥 Today Available</h2>
+    <div class="today">
+    Mangoes - 50kg<br>
+    Bananas - Available<br>
+    Sapota - Available<br>
+    White Neredu - Seasonal<br>
+    Eggs - 100 available<br>
+    Fresh Vegetables - Limited stock<br>
+    Coconuts - Available
+</div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+    <h2>Our Products</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="mango.jpg">
+            <h3>Mangoes</h3>
+            <p class="price">₹50/kg</p>
+            <p class="badge">Only 20kg left</p>
+            <a class="btn" href="https://wa.me/918500430381?text=Order Mangos">Order</a>
+        </div>
+            
+        <div class="card">
+            <img src="eggs.jpg">
+            <h3>Natu Kodi Eggs</h3>
+            <p class="price">₹15/egg</p>
+            <a class="btn" href="https://wa.me/918500963711?text=Order Eggs">Order</a>
+        </div>
+
+        <div class="card">
+            <img src="coconut.jpg">
+            <h3>Coconuts</h3>
+            <p class="price">₹30/piece</p>
+            <a class="btn" href="https://wa.me/918500963711?text=Order Coconuts">Order</a>
+        </div>
+        <div class="card">
+            <img src="appleber.jpg">
+            <h3>Apple Ber (Winter)</h3>
+            <p class="price">₹80/kg</p>
+            <p>Seasonal fresh fruit (Available in Winter)</p>
+            <a class="btn" href="https://wa.me/918500963711?text=Order Apple Ber">Order</a>
+        </div>
+        <div class="card">
+            <img src="banana.jpg">
+            <h3>Bananas</h3>
+            <p class="price">₹40/dozen</p>
+            <p>Fresh farm bananas</p>
+            <a class="btn" href="https://wa.me/918500963711?text=Order Bananas">Order</a>
+        </div>
+
+        <div class="card">
+           <img src="neredu.jpg">
+           <h3>White Neredu (Jamun)</h3>
+           <p class="price">₹120/kg</p>
+           <p>Seasonal fruit (Summer)</p>
+           <a class="btn" href="https://wa.me/918500963711?text=Order White Neredu">Order</a>
+        </div>
+
+        <div class="card">
+           <img src="sapota.jpg">
+           <h3>Sapota (Chikoo)</h3>
+           <p class="price">₹60/kg</p>
+           <p>Sweet and fresh from farm</p>
+           <a class="btn" href="https://wa.me/918500963711?text=Order Sapota">Order</a>
+        </div>
+
+        <div class="card">
+            <img src="rabbit.jpg">
+            <h3>Rabbits</h3>
+            <p class="price">₹500/rabbit</p>
+            <p>Meat / Breeding</p>
+            <a class="btn" href="https://wa.me/918500963711?text=Order Rabbits">Order</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- PAYMENT -->
+<section id="payment">
+    <h2>💰 Pay Online (UPI)</h2>
+    <div class="payment">
+        <p>Scan & Pay using PhonePe / GPay / Paytm</p>
+        
+        <!-- Replace with your QR -->
+        <img src="upi.jpg" width="200">
+
+        <p><b>UPI ID:</b> chanduboggula@upi</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: +91 8500963711</p>
+    <p>📍 Location: Choppakatla Palem</p>
+</section>
+
+<footer>
+    <p>© Padma Organic Farm</p>
+</footer>
+
+</body>
+</html>
